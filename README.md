@@ -13,11 +13,16 @@ The focus of this project is on predicting matches of the German Bundesliga. We 
 All football and weather data are stored in a MySQL database.
 
 ## Docker Container
-A Docker image has been created to facilitate the running of these notebooks in a consistent environment. The image is available here: <PLACEHOLDER>.
-To run the Docker container locally, use the following command:
+A Docker image has been created to facilitate the running of these notebooks in a consistent environment.
+To use the container, please follow these steps:
 
-**docker pull besram/bundesliga-prediction-jupyter:latest**
-**docker run -p 8888:8888 besram/bundesliga-prediction-jupyter:latest**
+1. Install Docker and Docker Compose (if not already done)
+2. Open Terminal and pull the Docker image with 'docker pull besram/bundesliga-prediction-jupyter:latest'
+3. Create a new directory anywhere on your system.
+4. Download the 'docker-compose.yml' from Github (see above) and place it into the newly created directory.
+5. Navigate to the directory containing the 'docker-compose.yml' file in your Terminal.
+6. Execute the following command to start the containers: 'docker-compose up -d'
+7. Access in Browser http://localhost:8888
 
 ## Data Sources
 - Football data: https://fbref.com/de/wettbewerbe/20/Bundesliga-Statistiken
