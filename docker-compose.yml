@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  jupyter:
+    image: besram/bundesliga-prediction-jupyter:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.36
+    environment:
+      MYSQL_ROOT_PASSWORD: abcabc123
+      MYSQL_DATABASE: adsfootball
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3308:3308"
+    expose:
+      - "3308"
+
+volumes:
+  db_data:
