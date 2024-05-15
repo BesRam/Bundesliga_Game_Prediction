@@ -9,6 +9,10 @@ The focus of this project is on predicting matches of the German Bundesliga. We 
 2. **Weather_Data_API_v2.ipynb** - This notebook is used for gathering weather data.
 3. **Data_Preprocessing_and_ML.ipynb** - This notebook merges and processes the football and weather data. It involves exploratory data analysis (EDA), feature engineering, training the machine learning model, and interpreting the evaluations.
 
+## Show Maps on "Data_Preprocessing_and_ML.ipynb"
+GitHub does not support rendering interactive maps in Jupyter Notebooks. Therefore, we have rendered the Jupyter Notebook with Folium maps on [nbviewer](https://nbviewer.org/). You can find the fully rendered Jupyter Notebook here: [Data_Preprocessing_and_ML.ipynb - Rendered with Maps](https://nbviewer.org/github/BesRam/Bundesliga_Game_Prediction/blob/main/Data_Preprocessing_and_ML.ipynb).
+
+
 ## Data Storage
 All football and weather data are stored in a MySQL database.
 
