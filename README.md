@@ -16,7 +16,7 @@ GitHub does not support rendering interactive maps in Jupyter Notebooks. Therefo
 ## Data Storage
 All football and weather data are stored in a MySQL database.
 
-## Docker Container
+## Docker Container (https://hub.docker.com/r/besram/bundesliga-prediction-jupyter)
 A Docker image has been created to facilitate the running of these notebooks in a consistent environment.
 To use the container, please follow these steps:
 
